@@ -2,6 +2,8 @@
 
 Markup patterns in a contenteditable field
 
+![Screenshot](screenshot.jpg?raw=true "Screenshot")
+
 ## Install
 
 ````
