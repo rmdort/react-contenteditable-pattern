@@ -1,0 +1,19 @@
+/**
+ * Editable
+ */
+.cWrapper {
+  position: relative;
+  width: 100%;
+  border: 1px #ccc solid;
+
+  .cWrapperFake {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: transparent;
+    background: transparent;
+  }
+}
