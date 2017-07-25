@@ -1,12 +1,26 @@
 {
   "name": "react-contenteditable-pattern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Markup patterns in a contenteditable field",
   "main": "lib/index.js",
   "scripts": {
     "watch": "BABEL_ENV=production babel --watch src --out-dir lib"
   },
-  "author": "",
+  "author": "Vinay M <rmdort@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rmdort/react-contenteditable-pattern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmdort/react-contenteditable-pattern.git"
+  },
+  "keywords": [
+    "react",
+    "contenteditable",
+    "highlight",
+    "pattern"
+  ],
+  "homepage": "https://github.com/rmdort/react-contenteditable-pattern#readme",
   "license": "ISC",
   "peerDependencies": {
     "react": "^15.6.1",
