@@ -1,4 +1,6 @@
-# React Content Editable with support to capture patterns
+# React Content Editable
+
+Markup patterns in a contenteditable field
 
 ## Install
 
