@@ -27,7 +27,7 @@ ReactDOM.render(
   <ContentEditable
     onSubmit={(value) => {}}
     onChange={(value) => {}}
-    format={(value) => {
+    formatValue={(value) => {
       return value.replace(reg, (match, text) => {
         return `<span>{${text}}</span>`
       })

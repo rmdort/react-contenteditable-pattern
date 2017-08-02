@@ -5,7 +5,7 @@ export default class ContentEditable extends React.Component {
     super (props)
   }
   static defaultProps = {
-    format: null,
+    formatValue: null,
     onChange: null,
     onSubmit: null,
   };
@@ -19,7 +19,7 @@ export default class ContentEditable extends React.Component {
     this.updateFakeEl(text)
   };
   updateFakeEl = (text) => {
-    this.fakeEl.innerHTML = this.props.format ? this.props.format(text) : text
+    this.fakeEl.innerHTML = this.props.formatValue ? this.props.formatValue(text) : text
   };
   componentDidUpdate () {
     if ( this.el && this.props.value !== this.el.textContent ) {
@@ -61,7 +61,7 @@ export default class ContentEditable extends React.Component {
     }
   };
   render () {
-    let { format, value, ...rest } = this.props
+    let { formatValue, value, ...rest } = this.props
 
     return (
       <div className='ContentEditableWrapper'>
@@ -79,6 +79,7 @@ export default class ContentEditable extends React.Component {
           contentEditable
           readOnly
           className='ContentEditable-Fake'
+          tabIndex={-1}
         />
       </div>
     )

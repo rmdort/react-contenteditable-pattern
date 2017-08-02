@@ -10,7 +10,7 @@ ReactDOM.render(
     onChange={(value) => {}}
     value={'I want to buy {product} from {store}'}
     placeholder='Enter your text here'
-    format={(value) => {
+    formatValue={(value) => {
       return value.replace(reg, (match, text) => {
         return `<span>{${text}}</span>`
       })
