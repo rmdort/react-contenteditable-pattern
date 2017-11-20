@@ -1,13 +1,28 @@
 /**
  * Content Editable
  */
-.ContentEditableWrapper {
+ .ContentEditableWrapper {
   position: relative;
   width: 100%;
   border: 1px #ccc solid;
+  z-index: 2;
+}
+.ContentEditable-Input {
+  position: relative;
+  z-index: 1;
+  color: #333;
+  font-size: 16px;
+}
+.ContentEditable-Input, .ContentEditable-Fake {
+  height: 34px;
+  padding: 5px 10px;
+
+  &:focus {
+    outline: none;
+  }
 }
 .ContentEditable-Fake {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -24,5 +39,5 @@
   content: attr(placeholder);
   cursor: text;
   display: block;
-  color: rgba(0,0,0,.25);
+  color: #666;
 }
